@@ -1,0 +1,64 @@
+extends template/layout
+
+block content 
+    .hero
+        .hero__content
+            p.hero__tagline A hiking guide 
+            h1.hero__title Be Prepared For The Mountains And Beyond!
+            p.hero__scroll Scroll down 
+
+    .section(section--features)
+        .container 
+            .feature(id="section2") 
+                .feature__content 
+                    h2.feature__number 01
+                    p.feature__tagline Get Started
+                    h3.feature__title What level of  hiker are you?
+                    p.feature__text Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? 
+                    a.feature__link(href="#") Read more
+
+                .feature__image
+                    img(src="images/jpg/01.jpg", alt="level of hiking")
+
+            .feature(id="section3") 
+                .feature__content 
+                    h2.feature__number 02
+                    p.feature__tagline Hiking Essentials
+                    h3.feature__title Picking the right Hiking Gear!
+                    p.feature__text 
+                        |   The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.
+                        |    Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.
+                    a.feature__link(href="#") Read more
+                .feature__image
+                    img(src="images/jpg/02.jpg", alt="Hiking Gear")
+
+            .feature(id="section4")
+                .feature__content 
+                    h2.feature__number 03
+                    p.feature__tagline where you go is the key
+                    h3.feature__title Understand Your Map & Timing
+                    p.feature__text To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction..
+                    a.feature__link(href="#") Read more
+                .feature__image
+                    img(src="images/jpg/03.jpg", alt="Map & Timing")
+
+    nav.slider
+        ul.slider__list
+            li.slider__item
+                button.slider__link(data-section="section1") Start
+            li.slider__item
+                button.slider__link(data-section="section2") 01
+            li.slider__item
+                button.slider__link(data-section="section3") 02
+            li.slider__item
+                button.slider__link(data-section="section4") 03
+    
+    .social 
+        .social__content 
+            p.social__text Follow us 
+            a.social__icon.inst__icon(href="#")
+                svg 
+                    use(xlink:href="../assets/images/sprite.svg#insta")
+            a.social__icon.twitter__icon(href="#")
+                svg 
+                    use(xlink:href="../assets/images/sprite.svg#twitter")

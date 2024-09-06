@@ -1,0 +1,61 @@
+.header {
+    width: 1760px;
+
+    padding-top: 64px;
+
+    margin: 0 auto;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 32px;
+        font-family: 'Merriweather', serif;
+        text-transform: uppercase;
+    }
+
+}
+
+.nav {
+    &__list {
+        display: flex;
+        list-style: none;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        margin-right: 40px;
+
+        &--link {
+            color: #ffffff;
+            text-decoration: none;
+
+        }
+    }
+}
+
+.account {
+    &__link {
+        text-decoration: none;
+        color: #ffffff;
+
+        display: flex;
+        align-items: center;
+
+        & svg {
+            fill: #ffffff;
+
+            width: 24px;
+            height: 24px;
+
+            margin-right: 8px;
+        }
+    }
+}

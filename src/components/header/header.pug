@@ -1,0 +1,47 @@
+mixin header(data)
+
+	- data = data || {}
+
+	//- модификатор
+	+modif('header', data.mod)
+
+	//- префикс
+	+prefix('header', data.prefix)
+
+	//- атрибуты
+	- attr = data.attr || ''
+
+	div(class=`header${pr}${mod}`)&attributes(attr)
+
+		.header__wrapper(id="section1")
+			.header__logo 
+				a(href="#")
+					img(src="", alt="")
+		
+			.header__nav.nav
+				ul.nav__list 
+					li.nav__item
+						button.nav__item--link(data-section="section1") Main 
+					li.nav__item
+						button.nav__item--link(data-section="section2") About 
+					li.nav__item
+						button.nav__item--link(data-section="section3") Game features
+					li.nav__item
+						button.nav__item--link(data-section="section4") System requirements
+					li.nav__item
+						button.nav__item--link(data-section="section5") Quotes 
+			
+			.header__right.right
+				.header__language
+					button.language__toggle ENG
+					ul.language__dropdown
+						li.language__option RUS
+						li.language__option FRA
+						li.language__option DEU
+				.header__icons
+					a.icon(href="#")
+						img(src="path/to/xbox-icon.svg" alt="Xbox")
+					a.icon(href="#")
+						img(src="path/to/steam-icon.svg" alt="Steam")
+
+						

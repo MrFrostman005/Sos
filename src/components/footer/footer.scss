@@ -1,0 +1,68 @@
+.footer {
+    width: 1462px;
+    margin: 0 auto;
+  
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    &__column {
+        width: 566px;
+        display: flex;
+        justify-content: space-between;
+      
+    }
+  
+    &__logo {
+
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 32px;
+        font-family: 'Merriweather', serif;
+        text-transform: uppercase;
+    }
+  
+    &__description {
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: normal;
+    }
+  
+    &__title {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: bold;
+      color: #FBD784;
+    }
+  
+    &__list {
+      margin-top: 10px;
+      list-style: none;
+      padding: 0;
+    }
+  
+    &__item {
+      font-size: 18px;
+      line-height: 32px;
+      font-weight: normal;
+
+      margin-top: 16px;
+    }
+  
+    &__link {
+      text-decoration: none;
+      color: #ffffff;
+  
+      &:hover {
+        color: #c5a46d; // Цвет при наведении
+      }
+    }
+  
+    &__bottom {
+      margin-top: -60px;
+      text-align: left;
+      color: #737373; // Цвет текста копирайта
+      font-weight: lighter;
+    }
+  }

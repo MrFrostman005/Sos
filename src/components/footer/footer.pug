@@ -1,0 +1,48 @@
+mixin footer(data)
+
+	- data = data || {}
+
+	//- модификатор
+	+modif('footer', data.mod)
+
+	//- префикс
+	+prefix('footer', data.prefix)
+
+	//- атрибуты
+	- attr = data.attr || ''
+
+	div(class=`footer${pr}${mod}`)&attributes(attr)
+
+		.footer__container
+			.footer__column--1
+				a.footer__logo(href="#") MNTN
+				p.footer__description Get out there & discover your next<br> slope, mountain & destination!
+			
+
+			.footer__column
+				.footer__column--links
+					h3.footer__title More on The Blog
+					ul.footer__list
+						li.footer__item
+							a.footer__link(href="#") About MNTN
+						li.footer__item
+							a.footer__link(href="#") Contributors & Writers
+						li.footer__item
+							a.footer__link(href="#") Write For Us
+						li.footer__item
+							a.footer__link(href="#") Contact Us
+						li.footer__item
+							a.footer__link(href="#") Privacy Policy
+
+				.footer__column--links
+					h3.footer__title More on MNTN
+					ul.footer__list
+						li.footer__item
+							a.footer__link(href="#") The Team
+						li.footer__item
+							a.footer__link(href="#") Jobs
+						li.footer__item
+							a.footer__link(href="#") Press
+
+		.footer__bottom
+			p.footer__copyright Copyright 2023 MNTN, Inc. Terms & Privacy

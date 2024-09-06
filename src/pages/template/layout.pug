@@ -1,0 +1,21 @@
+include ../../components/header/header
+include ../../components/footer/footer
+include ../helpers/mixins
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title MNTN
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/header/header.min.css">
+    <link rel="stylesheet" href="css/footer/footer.min.css">
+  body
+    +header()
+    main.main
+      block content
+
+    +footer()
+    script(src="js/main.min.js")
+    
