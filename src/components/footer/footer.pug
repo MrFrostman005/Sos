@@ -14,35 +14,46 @@ mixin footer(data)
 	div(class=`footer${pr}${mod}`)&attributes(attr)
 
 		.footer__container
-			.footer__column--1
-				a.footer__logo(href="#") MNTN
-				p.footer__description Get out there & discover your next<br> slope, mountain & destination!
+			.footer__top
+				a.footer__logo(href="#")
+					img(src="", alt="")
+				.footer__nav.nav
+					ul.nav__list 
+						li.nav__item
+							button.nav__item--link(data-section="section1") Main 
+						li.nav__item
+							button.nav__item--link(data-section="section2") About 
+						li.nav__item
+							button.nav__item--link(data-section="section3") Game features
+						li.nav__item
+							button.nav__item--link(data-section="section4") System requirements
+						li.nav__item
+							button.nav__item--link(data-section="section5") Quotes
+				.footer__link 
+					ul.link__list
+						li.link__item
+							a.link__item--facebook(href="facebook.com")
+								img(src="", alt="")
+						li.link__item
+							a.link__item--twitter(href="twitter.com")
+								img(src="", alt="")
+						li.link__item
+							a.link__item--youtube(href="youtube.com")
+								img(src="", alt="")
+						li.link__item
+							a.link__item--twitch(href="twitch.com")
+								img(src="", alt="")
+			.footer__bottom 
+				.legal-links
+					ul.legal-links__list
+						li.legal-links__item
+							a.legal-links__link(href="#") Privacy Policy
+						li.legal-links__item
+							a.legal-links__link(href="#") Terms of Services
+						li.legal-links__item
+							a.legal-links__link(href="#") Code of Conduct	
+
+
 			
 
-			.footer__column
-				.footer__column--links
-					h3.footer__title More on The Blog
-					ul.footer__list
-						li.footer__item
-							a.footer__link(href="#") About MNTN
-						li.footer__item
-							a.footer__link(href="#") Contributors & Writers
-						li.footer__item
-							a.footer__link(href="#") Write For Us
-						li.footer__item
-							a.footer__link(href="#") Contact Us
-						li.footer__item
-							a.footer__link(href="#") Privacy Policy
-
-				.footer__column--links
-					h3.footer__title More on MNTN
-					ul.footer__list
-						li.footer__item
-							a.footer__link(href="#") The Team
-						li.footer__item
-							a.footer__link(href="#") Jobs
-						li.footer__item
-							a.footer__link(href="#") Press
-
-		.footer__bottom
-			p.footer__copyright Copyright 2023 MNTN, Inc. Terms & Privacy
+			

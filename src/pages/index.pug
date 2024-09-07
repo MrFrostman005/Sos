@@ -1,64 +1,118 @@
 extends template/layout
 
 block content 
-    .hero
-        .hero__content
-            p.hero__tagline A hiking guide 
-            h1.hero__title Be Prepared For The Mountains And Beyond!
-            p.hero__scroll Scroll down 
+    .hero 
+        .hero-content
+            h1.hero__title SURVIVE AT ALL COSTS
+            h3.hero__subtitle Experience new social battle royale game
+            a(href="#").hero__buy.button
+                p.button__title Buy now on Steam
+                p.button__prise $ 14.99
+            button.hero__scroll The story 
 
-    .section(section--features)
-        .container 
-            .feature(id="section2") 
-                .feature__content 
-                    h2.feature__number 01
-                    p.feature__tagline Get Started
-                    h3.feature__title What level of  hiker are you?
-                    p.feature__text Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? 
-                    a.feature__link(href="#") Read more
+    .about 
+        .about__content 
+            .about__text 
+                h3.about__subtitle What is SOS?
+                h2.about__title Social battle royale game
+                p.about__game-text 
+                    | Each round, you and 15 other contestants compete to escape a deadly island filled with monsters. The trick is: three people can survive. Will you run solo or form friendships with others to escape? 
+                    | Making the right decisions could be the difference between life and death.
 
-                .feature__image
-                    img(src="images/jpg/01.jpg", alt="level of hiking")
+            .about__slider.slider
 
-            .feature(id="section3") 
-                .feature__content 
-                    h2.feature__number 02
-                    p.feature__tagline Hiking Essentials
-                    h3.feature__title Picking the right Hiking Gear!
-                    p.feature__text 
-                        |   The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.
-                        |    Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.
-                    a.feature__link(href="#") Read more
-                .feature__image
-                    img(src="images/jpg/02.jpg", alt="Hiking Gear")
+    .features 
+        .features__content 
+            h3.features__subtitle What’s so special?
+            h2.features__main-title Features
+            ul.features__list 
+                li.features__item
+                    h4.features__title SURVIVE AT ALL COSTS
+                    p.features__text You have 30 minutes to find a relic, signal for extraction, and grab one of three spots on the rescue chopper.
+                li.features__item 
+                    h4.features__title CREATE ALLIES AND ENEMIES
+                li.features__item 
+                    h4.features__title IMPRESS THE AUDIENCE
 
-            .feature(id="section4")
-                .feature__content 
-                    h2.feature__number 03
-                    p.feature__tagline where you go is the key
-                    h3.feature__title Understand Your Map & Timing
-                    p.feature__text To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction..
-                    a.feature__link(href="#") Read more
-                .feature__image
-                    img(src="images/jpg/03.jpg", alt="Map & Timing")
+    .requirements
+        .requirements__content 
+            h3.requirements__subtitle Can My Computer Run this game?
+            h2.requirements__title System requirements
+            
+            table.requirements__table.table
+                tbody
+                    tr
+                        td
+                            h3.table__title Os:
+                            P.table__text Windows 7 64-bit only (No OSX support at this time)
+                        td
+                            h3.table__title Processor:
+                            P.table__text Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
+                    tr
+                        td
+                            h3.table__title Memory:
+                            P.table__text 8 GB RAM
+                        td
+                            h3.table__title Storage:
+                            P.table__text 8 GB available space
+                    tr
+                        td colspan="2"
+                            h3.table__title Graphics
+                            P.table__text NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
 
-    nav.slider
-        ul.slider__list
-            li.slider__item
-                button.slider__link(data-section="section1") Start
-            li.slider__item
-                button.slider__link(data-section="section2") 01
-            li.slider__item
-                button.slider__link(data-section="section3") 02
-            li.slider__item
-                button.slider__link(data-section="section4") 03
+        .press-quotes
+            .press-quotes__container 
+                .press-quotes__content 
+                    h3.press-quotes__subtitle What people think?
+                    h2.press-quotes__title Press quotes
+                    p.press-quotes__text Our goal is to create a product and service that you’re satisfied with and use it every day. This is why we’re constantly working on our services to make it better every day and really listen to what our users has to say.
+                    a(href="#").press-quotes__button read more testimonials
+            
+                .press-quotes__quotes 
+                    .quote__evan
+                        .quote__header
+                            .quote__avatar  
+                                img(src="", alt="")
+                            .quote__content  
+                                p.quote__author Evan Lahti
+                                p.quote__position PC Gamer
+                            .quote__icon 
+                                img(src="", alt="")
+                        p.quote__text “One of my gaming highlights of the year.”
+                        .quote__date October 18, 2018
+
+                    .quote__jada
+                        .quote__header 
+                            .quote__avatar  
+                                img(src="", alt="")
+                            .quote__content                             
+                                .quote__author Jada Griffin 
+                                .quote__position Nerdreactor
+                            .quote__icon 
+                                img(src="", alt="")
+                        p.quote__text “The next big thing in the world of streaming and survival games.”
+                        .quote__date December 21, 2018
+
+                    .quote
+                        .quote__header
+                            .quote__avatar  
+                                img(src="", alt="")
+                            .quote__content 
+                                .quote__author Aaron Williams 
+                                .quote__position Uproxx
+                            .quote__icon 
+                                img(src="", alt="")
+                        p.quote__text “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”
+                        .quote__date December 24, 2018
+        
+    .newsletter-subscribe
+        .newsletter-subscribe__container 
+            h3.newsletter-subscribe__subtitle
+            h2.newsletter-subscribe__title
+            p.newsletter-subscribe__text
+            .newsletter-subscribe__subscribe
+                .subscribe__form-group
+                    input#email(type="email" required)
+                    label(for="email") Your email address
+                button.subscribe__button Subscribe now
     
-    .social 
-        .social__content 
-            p.social__text Follow us 
-            a.social__icon.inst__icon(href="#")
-                svg 
-                    use(xlink:href="../assets/images/sprite.svg#insta")
-            a.social__icon.twitter__icon(href="#")
-                svg 
-                    use(xlink:href="../assets/images/sprite.svg#twitter")
