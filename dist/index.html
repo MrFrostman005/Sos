@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MNTN</title><link rel="stylesheet" href="css/style.min.css">
 <link rel="stylesheet" href="css/header/header.min.css">
+<link rel="stylesheet" href="css/about.min.css">
+<link rel="stylesheet" href="css/slider/slider.min.css">
 <link rel="stylesheet" href="css/footer/footer.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -64,13 +67,31 @@
           <div class="about__content"> 
             <div class="about__left"> 
               <h3 class="about__subtitle">What is SOS?</h3>
-              <h1 class="about__title">Social battle royale game</h1>
-              <p class="about__game-text">
-                 Each round, you and 15 other contestants compete to escape a deadly island filled with monsters. The trick is: three people can survive. Will you run solo or form friendships with others to escape? 
-                Making the right decisions could be the difference between life and death.
-              </p>
+              <h1 class="about__title">Social battle<br> royale game</h1>
+              <div class="about__text--wrapper">
+                <p class="about__text">Each round, <span class="about__text--bold">you </span>and <span class="about__text--bold">15 </span>other contestants compete to escape a deadly island filled with monsters. The trick is: <span class="about__text--bold">three  </span>people can survive. Will you run solo or form friendships with others to escape?</p>
+                <p class="about__text">
+                     Making the right decisions could be the difference between life and death.</p>
+              </div>
             </div>
-            <div class="about__right"></div>
+            <div class="about__right">
+              <section class="slider">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/jpg/screenshot1.jpg" alt="Slide 1"></div>
+                    <div class="swiper-slide"><img src="../images/jpg/screenshot2.jpg" alt="Slide 2"></div>
+                    <div class="swiper-slide"><img src="../images/jpg/screenshot3.jpg" alt="Slide 3"></div>
+                    <div class="swiper-slide"><img src="../images/jpg/screenshot1.jpg" alt="Slide 4"></div>
+                    <div class="swiper-slide"><img src="../images/jpg/screenshot2.jpg" alt="Slide 5"></div>
+                  </div>
+                  <div class="pagination-wrapper">
+                    <div class="swiper-pagination"> </div>
+                    <div class="pagination-line"> </div>
+                  </div>
+                  <button class="swiper-button-next"></button>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
         <div class="features"> 

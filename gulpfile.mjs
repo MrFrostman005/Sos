@@ -12,7 +12,7 @@ import uglify from 'gulp-uglify';
 import imagemin from 'gulp-imagemin';
 import browserSync from 'browser-sync';
 import concat from 'gulp-concat';
-import sassCompiler from 'sass';
+import * as sassCompiler from 'sass';
 import svgSprite from 'gulp-svg-sprite';
 import cheerio from 'gulp-cheerio';
 import newer from 'gulp-newer';
@@ -24,14 +24,30 @@ const bs = browserSync.create();
 
 const paths = {
   images: {
-      src: 'src/images/**/*',  // Исходные изображения
-      dest: 'dist/images'      // Папка назначения
+    src: 'src/images/**/*',
+    dest: 'dist/images'
+  },
+  fonts: {
+    src: 'src/fonts/**/*',
+    dest: 'dist/fonts'
+  },
+  js: {
+    src: ['src/js/**/*.js', 'src/components/**/*.js'], // Убедитесь, что это определено правильно
+    dest: 'dist/js'
+  },
+  sass: {
+    src: ['src/sass/**/*.scss', 'src/components/**/*.scss'],
+    dest: 'dist/css'
+  },
+  pug: {
+    src: 'src/pages/**/*.pug',
+    dest: 'dist'
   }
 };
 
 // Задача для компиляции Pug в HTML
 export const pugTask = () => {
-  return gulp.src('src/pages/**/*.pug')
+  return gulp.src('src/pages/**/*.pug', 'src/components/**/*.pug')
     .pipe(pug({
       pretty: true
     }))
@@ -56,7 +72,7 @@ export const sassTask = () => {
 
 // Задача для обработки JavaScript
 export const jsTask = () => {
-  return gulp.src(['src/js/**/*.js', 'src/components/**/*.js'])
+  return gulp.src(paths.js.src)
     .pipe(sourcemaps.init())
     .pipe(babel({
       presets: ['@babel/env']
@@ -64,7 +80,7 @@ export const jsTask = () => {
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest(paths.js.dest))
     .pipe(bs.stream());
 };
 

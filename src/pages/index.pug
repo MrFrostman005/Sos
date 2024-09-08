@@ -15,12 +15,21 @@ block content
         .about__content 
             .about__left 
                 h3.about__subtitle What is SOS?
-                h1.about__title Social battle royale game
-                p.about__game-text 
-                    | Each round, you and 15 other contestants compete to escape a deadly island filled with monsters. The trick is: three people can survive. Will you run solo or form friendships with others to escape? 
-                    | Making the right decisions could be the difference between life and death.
+                h1.about__title Social battle<br> royale game
+                .about__text--wrapper
+                    p.about__text
+                        | Each round, 
+                        span.about__text--bold you 
+                        | and 
+                        span.about__text--bold 15 
+                        | other contestants compete to escape a deadly island filled with monsters. The trick is: 
+                        span.about__text--bold three  
+                        | people can survive. Will you run solo or form friendships with others to escape?
+                    p.about__text    
+                        | Making the right decisions could be the difference between life and death.
 
             .about__right
+                include ../components/slider/slider
 
     .features 
         .features__content 

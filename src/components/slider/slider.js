@@ -1,3 +1,5 @@
+import Swiper from 'swiper/bundle';
+
 document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.swiper-container', {
         loop: true, // Бесконечный цикл

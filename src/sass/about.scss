@@ -1,0 +1,56 @@
+
+.about {
+    background-image: url('../images/jpg/bg-social.jpg');
+    background-size: contain;
+
+    &__content{
+        display: flex;
+
+        padding-top: 200px;
+
+        margin-left: 119px;
+    }
+
+    &__subtitle{
+        margin: 0;
+    }
+
+    &__title{
+        position: relative;
+
+        &::after {
+            content: "";
+
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+
+            width: 712px;
+            height: 3px;
+
+            background-color: #ffffff;
+
+            border-radius: 2px;
+        }
+    }
+
+    &__text {
+
+        font-weight: normal;
+        letter-spacing: 0;
+
+        text-align: justify;
+
+        &--wrapper {
+            width: 365px;
+
+            margin-left: 188px;
+            margin-top: 60px;
+        }
+
+        &--bold {
+            font-weight: bold;
+        }
+
+    }
+}

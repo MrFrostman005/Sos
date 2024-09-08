@@ -28,5 +28,8 @@
     "sass": "^1.77.8"
   },
   "author": "Your Name",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "swiper": "^11.1.12"
+  }
 }

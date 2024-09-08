@@ -1,3 +1,5 @@
+import '/slider/slider.js'
+
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.slider__link');
     const sections = {
