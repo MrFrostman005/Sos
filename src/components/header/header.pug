@@ -16,32 +16,32 @@ mixin header(data)
 		.header__wrapper(id="section1")
 			.header__logo 
 				a(href="#")
-					img(src="images/jpg/logo.jpg", alt="Sos logo")
+					img(src="../images/png/logo.png", alt="Sos logo").header__logo--img
 		
 			.header__nav.nav
 				ul.nav__list 
 					li.nav__item
-						button.nav__item--link(data-section="section1") Main 
+						button.nav__item--link.button(data-section="section1") Main 
 					li.nav__item
-						button.nav__item--link(data-section="section2") About 
+						button.nav__item--link.button(data-section="section2") About 
 					li.nav__item
-						button.nav__item--link(data-section="section3") Game features
+						button.nav__item--link.button(data-section="section3") Game features
 					li.nav__item
-						button.nav__item--link(data-section="section4") System requirements
+						button.nav__item--link.button(data-section="section4") System requirements
 					li.nav__item
-						button.nav__item--link(data-section="section5") Quotes 
+						button.nav__item--link.button(data-section="section5") Quotes 
 			
 			.header__right.right
-				.header__language
-					button.language__toggle ENG
+				.right__language.language
+					button.language__toggle.button ENG
 					ul.language__dropdown
-						li.language__option RU
-						li.language__option FRA
-						li.language__option DEU
+						li.language__option.button RU
+						li.language__option.button FRA
+						li.language__option.button DEU
 				.header__icons
 					a.icon(href="#")
-						img(src="images/jpg/xbox-icon.jpg" alt="Xbox")
+						img(src="../images/png/xbox-icon.png" alt="Xbox")
 					a.icon(href="#")
-						img(src="images/jpg/steam-icon.jpg" alt="Steam")
+						img(src="../images/png/steam-icon.png" alt="Steam")
 
 						

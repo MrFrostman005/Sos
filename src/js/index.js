@@ -41,3 +41,21 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks[index].classList.add('active');
     });
 });
+
+////Меню выбора языка
+document.addEventListener('DOMContentLoaded', () => {
+    const language = document.querySelector('.language');
+    const languageButton = document.querySelector('.language__toggle');
+    
+    languageButton.addEventListener('click', () => {
+      // Тогглим класс 'active' для открытия/закрытия списка
+      language.classList.toggle('active');
+    });
+    
+    // Дополнительно можно закрывать меню при клике вне его
+    document.addEventListener('click', (e) => {
+      if (!language.contains(e.target)) {
+        language.classList.remove('active');
+      }
+    });
+  });

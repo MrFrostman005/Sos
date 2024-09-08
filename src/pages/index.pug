@@ -1,30 +1,31 @@
 extends template/layout
 
-block content 
+block content
+    
     .hero 
         .hero-content
             h1.hero__title SURVIVE AT ALL COSTS
             h3.hero__subtitle Experience new social battle royale game
-            a(href="#").hero__buy.button
-                p.button__title Buy now on Steam
-                p.button__prise $ 14.99
+            a(href="#").hero__buy.buy
+                p.buy__title Buy now on Steam
+                p.buy__price $14.99
             button.hero__scroll The story 
 
     .about 
         .about__content 
-            .about__text 
+            .about__left 
                 h3.about__subtitle What is SOS?
-                h2.about__title Social battle royale game
+                h1.about__title Social battle royale game
                 p.about__game-text 
                     | Each round, you and 15 other contestants compete to escape a deadly island filled with monsters. The trick is: three people can survive. Will you run solo or form friendships with others to escape? 
                     | Making the right decisions could be the difference between life and death.
 
-            .about__slider.slider
+            .about__right
 
     .features 
         .features__content 
             h3.features__subtitle What’s so special?
-            h2.features__main-title Features
+            h1.features__main-title Features
             ul.features__list 
                 li.features__item
                     h4.features__title SURVIVE AT ALL COSTS
@@ -37,7 +38,7 @@ block content
     .requirements
         .requirements__content 
             h3.requirements__subtitle Can My Computer Run this game?
-            h2.requirements__title System requirements
+            h1.requirements__title System requirements
             
             table.requirements__table.table
                 tbody
@@ -56,7 +57,7 @@ block content
                             h3.table__title Storage:
                             P.table__text 8 GB available space
                     tr
-                        td colspan="2"
+                        td(colspan="2")
                             h3.table__title Graphics
                             P.table__text NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
 
@@ -64,7 +65,7 @@ block content
             .press-quotes__container 
                 .press-quotes__content 
                     h3.press-quotes__subtitle What people think?
-                    h2.press-quotes__title Press quotes
+                    h1.press-quotes__title Press quotes
                     p.press-quotes__text Our goal is to create a product and service that you’re satisfied with and use it every day. This is why we’re constantly working on our services to make it better every day and really listen to what our users has to say.
                     a(href="#").press-quotes__button read more testimonials
             
@@ -108,7 +109,7 @@ block content
     .newsletter-subscribe
         .newsletter-subscribe__container 
             h3.newsletter-subscribe__subtitle
-            h2.newsletter-subscribe__title
+            h1.newsletter-subscribe__title
             p.newsletter-subscribe__text
             .newsletter-subscribe__subscribe
                 .subscribe__form-group
